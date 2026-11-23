@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rodrigo Jacques Wolff · Portfólio de Dados</title>
+  <meta name="description" content="Engenheiro civil que virou Analytics Engineer. Seis projetos de dados reprodutíveis, com testes automatizados: RAIS, UFSC, Copa do Mundo, NBA, mercado imobiliário e Sienge.">
+  <meta property="og:title" content="Rodrigo Jacques Wolff · Portfólio de Dados">
+  <meta property="og:description" content="Seis projetos de dados reprodutíveis e testados. Revisitei todos e corrigi o que estava errado.">
+  <meta property="og:image" content="https://rodrigojacquesw.github.io/assets/img/rais-mapa.png">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231f6fd1'/><text x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'>RW</text></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#">Rodrigo Jacques Wolff</a>
+    <div class="nav-links">
+      <a href="#revisao" class="hide-sm">Revisão</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#como" class="hide-sm">Como trabalho</a>
+      <a href="#contato" class="hide-xs">Contato</a>
+      <button class="theme-btn" id="theme" aria-label="Alternar tema claro/escuro">◐</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>Florianópolis · aberto a oportunidades</span>
+    <h1>Engenheiro civil que virou <span class="muted">Analytics Engineer.</span></h1>
+    <p class="lead">Passei cinco anos em obra antes de trabalhar com dados. Da engenharia trouxe o hábito de conferir: aqui estão seis projetos que podem ser clonados e rodados, com testes que já pegaram erros de verdade.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projetos">Ver projetos</a>
+      <a class="btn" href="https://www.linkedin.com/in/rodrigo-jacques-wolff/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg>LinkedIn</a>
+      <a class="btn" href="https://github.com/RodrigoJacquesW" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>6</b><span>projetos revisados, que rodam a partir de um clone</span></div>
+      <div class="stat"><b>88</b><span>testes de dados automatizados (dbt e Dataform)</span></div>
+      <div class="stat"><b>29,7 mi</b><span>vínculos de emprego modelados (RAIS SC)</span></div>
+      <div class="stat"><b>~200</b><span>arquivos HTML e PDF transformados em uma série de 23 anos (UFSC)</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="revisao">
+  <div class="wrap">
+    <div class="review">
+      <h2>Revisitei meus projetos antigos</h2>
+      <p>Antes de montar este portfólio, refiz cada projeto para que qualquer pessoa consiga rodar. No caminho apareceram erros, alguns em análises que eu já tinha publicado no LinkedIn. Em vez de esconder, documentei cada um no README do repositório, com o antes e o depois.</p>
+      <div class="bugs">
+        <div class="bug"><span class="proj">RAIS SC</span><p>A "quebra de série" de <b>+52%</b> nos empregos de 2022 estava na extração: os arquivos tinham só <b>~60%</b> dos vínculos. O crescimento real foi de 6,5%.</p></div>
+        <div class="bug"><span class="proj">UFSC</span><p>Um <code>range()</code> pulava <b>2007 e 2010</b>, e os anos recentes incluíam treineiros. A queda de inscritos é de <b>52%</b>, não de 41%.</p></div>
+        <div class="bug"><span class="proj">Copa do Mundo</span><p>A Escócia estava com o código Elo de <b>Seicheles</b>, e estatística ausente contava como zero. A Nigéria subiu <b>5 posições</b>.</p></div>
+        <div class="bug"><span class="proj">Imobiliário</span><p><b>18%</b> dos imóveis tinham a distância até a praia errada em mais de 1 km: a praia era um ponto, e Jurerê nem estava na lista.</p></div>
+        <div class="bug"><span class="proj">NBA</span><p>Os testes acharam <b>5 jogos em quadra neutra</b> (Las Vegas, México, Berlim, Londres) que quebravam a regra mandante/visitante.</p></div>
+        <div class="bug"><span class="proj">Sienge</span><p>O <code>offset</code> ia <b>duas vezes</b> na URL da API, e um <code>try … otherwise null</code> escondia erros de autenticação.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Projetos</h2>
+      <p>Dados públicos, perguntas concretas e números conferidos no dado real. Cada projeto tem um README com método, testes e limitações.</p>
+    </div>
+
+    <article class="case" id="rais">
+      <div>
+        <div class="tags"><span class="tag">Analytics Engineering</span><span class="tag alt">Dados públicos</span></div>
+        <h3>Mercado de trabalho formal em Santa Catarina</h3>
+        <p class="q">Como evoluíram emprego, rotatividade e salários em SC entre 2019 e 2025, e onde estão as disparidades?</p>
+        <ul class="findings">
+          <li><b>+27% de empregos formais</b> em seis anos, e <b>+8% de salário mediano real</b>, que só superou o nível de 2019 em 2022.</li>
+          <li>A rotatividade subiu de 53% para 68%, mas a <b>descontada ficou estável em ~34%</b>: os pedidos de demissão foram de 30% para 42% dos desligamentos. É um mercado aquecido.</li>
+          <li>Mulheres recebem <b>83% a 87%</b> da mediana dos homens em todas as regiões. Na região de Florianópolis, pretos e pardos recebem <b>70%</b> da mediana dos brancos.</li>
+        </ul>
+        <div class="fixed"><strong>Na revisão</strong>Troquei extrações parciais em CSV pela RAIS completa no BigQuery e mantive o star schema no grão do vínculo, porque mediana não se recompõe de agregado. Um teste pegou a mudança de codificação da fonte em 2023.</div>
+        <div class="stack"><span>BigQuery</span><span>dbt</span><span>SQL</span><span>Star schema</span><span>Python</span><span>27 testes</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/rais-sc-labor-market" target="_blank" rel="noopener">Repositório →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="assets/img/rais-mapa.png" target="_blank"><img src="assets/img/rais-mapa.png" alt="Mapa de Santa Catarina com o salário mediano por município em 2025" loading="lazy"></a><figcaption>Salário mediano real por município, 2025 (29,7 mi de vínculos, 2019–2025)</figcaption></figure>
+        <figure class="shot"><a href="assets/img/rais-series.png" target="_blank"><img src="assets/img/rais-series.png" alt="Índice de emprego e salário real, e rotatividade bruta e descontada" loading="lazy"></a></figure>
+      </div>
+    </article>
+
+    <article class="case flip" id="ufsc">
+      <div>
+        <div class="tags"><span class="tag">Analytics Engineering</span><span class="tag alt">Educação</span></div>
+        <h3>23 anos de vestibular da UFSC</h3>
+        <p class="q">Quantas pessoas disputam o vestibular da UFSC, para quais cursos, e o que mudou desde 2003?</p>
+        <ul class="findings">
+          <li><b>Inscritos caíram 52%</b> (40.124 em 2005 → 19.178 em 2025), enquanto as vagas do vestibular subiram 12%. A concorrência foi de <b>10,2 para 4,4</b> candidatos por vaga.</li>
+          <li><b>Engenharias −77%</b> desde 2013. <b>Engenharia Civil −88%</b> (2.058 → 243). Licenciaturas −78%.</li>
+          <li>Saúde resiste (−22%) e Computação voltou a crescer depois de 2013.</li>
+        </ul>
+        <div class="fixed"><strong>Na revisão</strong>Reconstruí a série a partir de cerca de 200 arquivos HTML e PDF da Coperve, em 5 formatos diferentes. A série reconcilia com o total oficial de cada ano (95–98%). O texto agora deixa claro que parte das vagas foi para o SiSU, ou seja, menos inscritos no vestibular não é o mesmo que menos procura pela universidade.</div>
+        <div class="stack"><span>dbt</span><span>DuckDB</span><span>Python</span><span>pdfplumber</span><span>GitHub Actions</span><span>23 testes</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/UFSC_data_analysis" target="_blank" rel="noopener">Repositório →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="assets/img/ufsc-inscritos.png" target="_blank"><img src="assets/img/ufsc-inscritos.png" alt="Inscritos e candidatos por vaga no vestibular da UFSC, 2003 a 2025" loading="lazy"></a></figure>
+        <figure class="shot"><a href="assets/img/ufsc-areas.png" target="_blank"><img src="assets/img/ufsc-areas.png" alt="Inscritos por área, índice 2005 = 100" loading="lazy"></a></figure>
+      </div>
+    </article>
+
+    <article class="case" id="copa">
+      <div>
+        <div class="tags"><span class="tag">Modelagem</span><span class="tag alt">Esporte</span></div>
+        <h3>Beyond FIFA Rankings</h3>
+        <p class="q">Qual seleção chegava jogando melhor para a Copa de 2026, olhando como ela joga, e não só os resultados?</p>
+        <ul class="findings">
+          <li>Score com 5 pilares (ataque, defesa, controle, diferencial e eficiência), construído com <b>z-scores</b> dos últimos 20 jogos de 29 seleções.</li>
+          <li>Cada jogo tem peso pela força do adversário (<b>Elo</b>): enfrentar a Espanha pesa 2,25× mais que enfrentar a Ucrânia.</li>
+          <li><b>Espanha, Inglaterra, Alemanha e Marrocos</b> no topo. O Brasil fica em 15º: defende bem, mas é o 23º em ataque.</li>
+        </ul>
+        <div class="fixed"><strong>Na revisão</strong>Antes de mexer, provei que o código refatorado reproduzia o ranking publicado com diferença 0,00. Depois corrigi dois bugs (dado ausente como zero; códigos Elo errados). O top 4 se manteve.</div>
+        <div class="stack"><span>Python</span><span>Playwright</span><span>BigQuery</span><span>Dataform</span><span>Power BI</span><span>17 testes</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/selection-world-cup-analytics" target="_blank" rel="noopener">Repositório →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="assets/img/copa-pilares.png" target="_blank"><img src="assets/img/copa-pilares.png" alt="Os cinco pilares do modelo e seus pesos" loading="lazy"></a></figure>
+      </div>
+    </article>
+
+    <article class="case flip" id="nba">
+      <div>
+        <div class="tags"><span class="tag">Data pipeline</span><span class="tag alt">Esporte</span></div>
+        <h3>NBA Analytics Pipeline</h3>
+        <p class="q">Um pipeline de ponta a ponta: da API oficial da NBA a um dashboard que compara jogadores e times com a média da liga.</p>
+        <ul class="findings">
+          <li>Python → BigQuery → Dataform → Power BI, com <b>um comando</b>: <code>python main.py</code>.</li>
+          <li>Temporada 2025–26: <b>26.651</b> atuações de jogadores, 1.230 jogos e 582 atletas. Um teste reconcilia os pontos dos jogadores com o placar de cada time.</li>
+          <li>Os testes pegaram <b>5 jogos em quadra neutra</b>, em que a API marca os dois times como visitantes.</li>
+        </ul>
+        <div class="fixed"><strong>Na revisão</strong>Passei de 530 requisições para 1, tirei o ID do projeto do código e montei a dimensão de jogadores pela temporada. A lista de "ativos hoje" perdia quem se aposentou depois.</div>
+        <div class="stack"><span>Python</span><span>nba_api</span><span>BigQuery</span><span>Dataform</span><span>Power BI</span><span>21 testes</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/nba_project" target="_blank" rel="noopener">Repositório →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="assets/img/nba-players.jpg" target="_blank"><img src="assets/img/nba-players.jpg" alt="Dashboard de jogadores da NBA no Power BI" loading="lazy"></a></figure>
+        <figure class="shot"><a href="assets/img/nba-teams.jpg" target="_blank"><img src="assets/img/nba-teams.jpg" alt="Dashboard de times da NBA no Power BI" loading="lazy"></a></figure>
+      </div>
+    </article>
+
+    <article class="case" id="imoveis">
+      <div>
+        <div class="tags"><span class="tag">Web scraping + geo</span><span class="tag alt">Mercado imobiliário</span></div>
+        <h3>A praia define o preço em Florianópolis?</h3>
+        <p class="q">Quanto vale estar perto do mar? Analisei 1.514 apartamentos à venda, com a distância medida até o contorno real de 24 praias.</p>
+        <ul class="findings">
+          <li>Até 1 km da praia, o m² custa <b>~21% a mais</b> (mediana de R$ 18,2 mil contra R$ 15,1 mil entre 1 e 5 km).</li>
+          <li>Mas a distância explica pouco: <b>Beira-Mar Norte e Agronômica</b> estão entre os bairros mais caros a 10 km de qualquer praia oceânica, porque ficam de frente para a baía.</li>
+          <li>E <b>Ingleses</b> fica a 400 m do mar com um dos m² mais baratos da cidade.</li>
+        </ul>
+        <div class="fixed"><strong>Na revisão</strong>Descobri que a API já trazia as coordenadas, então a geocodificação era desnecessária e tinha 11% de falhas. Troquei a praia como ponto pelo contorno do OpenStreetMap, em metros (UTM 22S).</div>
+        <div class="stack"><span>Python</span><span>requests</span><span>Shapely</span><span>pyproj</span><span>OpenStreetMap</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/WebScraping-Analise-Imobiliaria-Florianopolis" target="_blank" rel="noopener">Repositório →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="assets/img/imoveis-mapa.png" target="_blank"><img src="assets/img/imoveis-mapa.png" alt="Mapa dos apartamentos à venda em Florianópolis coloridos por preço do metro quadrado" loading="lazy"></a></figure>
+        <figure class="shot"><a href="assets/img/imoveis-distancia.png" target="_blank"><img src="assets/img/imoveis-distancia.png" alt="Mediana do preço do m² por faixa de distância da praia" loading="lazy"></a></figure>
+      </div>
+    </article>
+
+    <article class="case flip" id="sienge">
+      <div>
+        <div class="tags"><span class="tag">Power Query</span><span class="tag alt">Construção civil</span></div>
+        <h3>API do Sienge no Power BI</h3>
+        <p class="q">O ERP mais usado por construtoras devolve no máximo 200 registros por chamada. Como carregar um cronograma inteiro no Power BI?</p>
+        <ul class="findings">
+          <li>Paginação com <code>List.Generate</code>, que para na primeira página incompleta, sem limite fixo.</li>
+          <li>URL base fixa com <code>RelativePath</code>, o que permite <b>atualização agendada</b> no Power BI Service.</li>
+          <li>Nasceu do dia a dia do planejamento de obra: é aqui que a engenharia encontra os dados.</li>
+        </ul>
+        <div class="fixed"><strong>Na revisão</strong>Corrigi o offset duplicado na URL, o limite fixo de 1.600 registros e o <code>try … otherwise null</code>, que transformava erro em página vazia.</div>
+        <div class="stack"><span>Power Query (M)</span><span>REST API</span><span>Power BI</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/Paginacao-API-sienge-para-PowerBI" target="_blank" rel="noopener">Repositório →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot" style="padding:22px">
+<pre style="margin:0;white-space:pre-wrap;font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink-2)">Pages = List.Generate(
+    () => [offset = 0, rows = GetPage(0)],
+    each List.Count([rows]) > 0,
+    each [
+        offset = [offset] + PageSize,
+        rows   = if List.Count([rows]) &lt; PageSize
+                 then {} else GetPage([offset] + PageSize)
+    ],
+    each [rows]
+)</pre>
+        </figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Como eu trabalho</h2>
+      <p>Três hábitos que trouxe da obra para os dados.</p>
+    </div>
+    <div class="how">
+      <div><h3>Reprodutível</h3><p>Qualquer pessoa clona, configura um <code>.env</code> e roda. Nenhum ID de projeto ou caminho fixo no código, e os dados de origem ficam versionados ou têm script de download.</p></div>
+      <div><h3>Testado</h3><p>Testes de unicidade, integridade e, principalmente, de reconciliação: soma de jogadores contra time, estoque inicial + admissões − desligamentos contra ativos, série contra total oficial.</p></div>
+      <div><h3>Honesto com o dado</h3><p>Mediana em vez de média quando há outlier, ressalvas escritas no README, e o que o dado não diz deixado tão claro quanto o que ele diz.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Vamos conversar?</h2>
+      <p>Procuro vagas de Analytics Engineer e Analista de Dados/BI. Engenharia civil e construção são um diferencial que gosto de usar.</p>
+    </div>
+    <div class="btns">
+      <a class="btn primary" href="https://www.linkedin.com/in/rodrigo-jacques-wolff/" target="_blank" rel="noopener">Falar no LinkedIn</a>
+      <a class="btn" href="https://github.com/RodrigoJacquesW" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Rodrigo Jacques Wolff · Florianópolis, SC</span>
+    <span>Dados públicos: RAIS/MTE, IBGE, Coperve/UFSC, NBA Stats, SofaScore, OpenStreetMap</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.getElementById("theme");
+    try { var saved = localStorage.getItem("theme"); if (saved) root.setAttribute("data-theme", saved); } catch (e) {}
+    btn.addEventListener("click", function () {
+      var dark = root.getAttribute("data-theme") === "dark" ||
+        (!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+      var next = dark ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
