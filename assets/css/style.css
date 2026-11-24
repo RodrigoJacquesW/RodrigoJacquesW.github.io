@@ -12,6 +12,8 @@
   --warm: #d9622b;
   --warm-soft: #fbece4;
   --good: #16865b;
+  --trace: rgba(31, 111, 209, 0.075);
+  --trace-lit: rgba(31, 111, 209, 0.62);
   --radius: 14px;
   --shadow: 0 1px 2px rgba(20, 22, 26, .05), 0 8px 24px rgba(20, 22, 26, .06);
   --max: 1120px;
@@ -33,6 +35,8 @@
     --warm: #ef8350;
     --warm-soft: #2c1f18;
     --good: #3fbf8a;
+    --trace: rgba(90, 156, 240, 0.085);
+    --trace-lit: rgba(110, 170, 255, 0.70);
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
     color-scheme: dark;
   }
@@ -41,6 +45,7 @@
   --bg: #111317; --surface: #181b20; --surface-2: #1f232a; --ink: #eef0f3; --ink-2: #b9bec7;
   --ink-3: #8d939d; --line: #2b3038; --accent: #5a9cf0; --accent-ink: #0d1117; --accent-soft: #19263a;
   --warm: #ef8350; --warm-soft: #2c1f18; --good: #3fbf8a;
+  --trace: rgba(90, 156, 240, 0.085); --trace-lit: rgba(110, 170, 255, 0.70);
   --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
   color-scheme: dark;
 }
@@ -164,3 +169,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 .timeline h3 { font-size: 21px; margin: 4px 0 6px; }
 .timeline p { margin: 0 0 10px; color: var(--ink-2); }
 .timeline .stack { margin-bottom: 0; }
+
+/* circuit background */
+#circuit { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; }
+header.hero, section, footer { position: relative; z-index: 1; }
