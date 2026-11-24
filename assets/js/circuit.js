@@ -110,7 +110,9 @@
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(base, ox * dpr, oy * dpr);
 
-    // lit board only inside the spotlight, faded at the edge, drawn on top of the faint board
+    // lit board only inside the spotlight, faded at the edge, drawn on top of the faint board.
+    // Touch screens have no cursor to follow: no spotlight there.
+    if (finePointer) {
     const tc = tmp.getContext("2d");
     tc.setTransform(1, 0, 0, 1, 0, 0);
     tc.globalCompositeOperation = "source-over";
@@ -121,6 +123,7 @@
     tc.globalCompositeOperation = "destination-in";
     tc.fillStyle = g; tc.fillRect(0, 0, tmp.width, tmp.height);
     ctx.drawImage(tmp, 0, 0);
+    }
 
     // signals travelling along traces
     if (!reduceMotion) {
