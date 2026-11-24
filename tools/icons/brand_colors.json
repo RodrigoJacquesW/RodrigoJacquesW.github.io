@@ -1,0 +1,14 @@
+{
+ "python": "3776AB",
+ "googlebigquery": "669DF6",
+ "googlecloud": "4285F4",
+ "duckdb": "FFF000",
+ "apacheairflow": "017CEE",
+ "git": "F03C2E",
+ "github": "181717",
+ "githubactions": "2088FF",
+ "bitbucket": "0052CC",
+ "sap": "0FAAFF",
+ "hubspot": "FF7A59",
+ "pandas": "150458"
+}
