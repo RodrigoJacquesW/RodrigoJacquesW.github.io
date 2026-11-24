@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rodrigo Jacques Wolff · Data Portfolio</title>
+  <meta name="description" content="Civil engineer turned Analytics Engineer. Five reproducible data projects with automated tests: Brazilian labour market (RAIS), UFSC entrance exam, World Cup, NBA and real estate.">
+  <meta property="og:title" content="Rodrigo Jacques Wolff · Data Portfolio">
+  <meta property="og:description" content="Five reproducible, tested data projects. I revisited all of them and fixed what was wrong.">
+  <meta property="og:image" content="https://rodrigojacquesw.github.io/assets/img/rais-mapa.png">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="alternate" hreflang="pt-BR" href="https://rodrigojacquesw.github.io/">
+  <link rel="alternate" hreflang="en" href="https://rodrigojacquesw.github.io/en/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231f6fd1'/><text x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'>RW</text></svg>">
+</head>
+<body>
+<canvas id="circuit" aria-hidden="true"></canvas>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#">Rodrigo Jacques Wolff</a>
+    <div class="nav-links">
+      <a href="#review" class="hide-sm">Review</a>
+      <a href="#projects" class="hide-xxs">Projects</a>
+      <a href="#experience" class="hide-sm">Experience</a>
+      <a href="#contact" class="hide-xs">Contact</a>
+      <div class="lang" role="group" aria-label="Idioma / Language"><a href="../" hreflang="pt-BR" aria-label="Português" title="Português"><svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#009c3b"/><path d="M10 1.6 18.2 7 10 12.4 1.8 7z" fill="#ffdf00"/><circle cx="10" cy="7" r="3.1" fill="#002776"/><path d="M7.1 6.3c1.9-.4 4-.1 5.8.9" stroke="#fff" stroke-width=".6" fill="none"/></svg></a><a href="./" hreflang="en" aria-current="true" aria-label="English" title="English"><svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#b22234"/><path d="M0 1.6h20M0 3.75h20M0 5.9h20M0 8.05h20M0 10.2h20M0 12.35h20" stroke="#fff" stroke-width="1.08"/><rect width="9" height="7.55" fill="#3c3b6e"/></svg></a></div>
+      <button class="theme-btn" id="theme" aria-label="Toggle light/dark theme">◐</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+    <div>
+    <span class="eyebrow"><span class="dot"></span>Analytics Engineer · Florianópolis, Brazil</span>
+    <h1>Civil engineer turned <span class="muted">Analytics Engineer.</span></h1>
+    <p class="lead">I spent four years on construction sites before moving to data. Today I model data with dbt, BigQuery and Power BI. From engineering I kept the habit of checking: here are five projects you can clone and run, with tests that have already caught real errors.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See projects</a>
+      <a class="btn" href="https://www.linkedin.com/in/rodrigo-jacques-wolff/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg>LinkedIn</a>
+      <a class="btn" href="https://github.com/RodrigoJacquesW" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a>
+    </div>
+    </div>
+    <figure class="portrait"><img src="../assets/img/rodrigo.jpg" alt="Photo of Rodrigo Jacques Wolff" width="480" height="480"></figure>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>5</b><span>revised projects that run from a fresh clone</span></div>
+      <div class="stat"><b>88</b><span>automated data tests (dbt and Dataform)</span></div>
+      <div class="stat"><b>29.7M</b><span>employment contracts modeled (Brazilian labour data)</span></div>
+      <div class="stat"><b>~200</b><span>HTML and PDF files turned into a 23-year series</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="review">
+  <div class="wrap">
+    <div class="review">
+      <h2>I revisited my old projects</h2>
+      <p>Before building this portfolio, I rebuilt every project so that anyone can run it. Along the way I found errors, some of them in analyses I had already posted on LinkedIn. Instead of hiding them, I documented each one in the repository README, with the before and after.</p>
+      <div class="bugs">
+        <div class="bug"><span class="proj">Labour market</span><p>The <b>+52%</b> "break" in 2022 employment was in the extract: the files had only <b>~60%</b> of the contracts. Real growth was 6.5%.</p></div>
+        <div class="bug"><span class="proj">UFSC</span><p>A <code>range()</code> skipped <b>2007 and 2010</b>, and recent years included practice-only candidates. Applicants fell <b>52%</b>, not 41%.</p></div>
+        <div class="bug"><span class="proj">World Cup</span><p>Scotland had the Elo code of the <b>Seychelles</b>, and missing statistics counted as zero. Nigeria moved up <b>5 places</b>.</p></div>
+        <div class="bug"><span class="proj">Real estate</span><p><b>18%</b> of listings had their distance to the beach off by more than 1 km: each beach was a single point, and Jurerê was not even on the list.</p></div>
+        <div class="bug"><span class="proj">NBA</span><p>The tests found <b>5 neutral-site games</b> (Las Vegas, Mexico City, Berlin, London) that broke the home/away rule.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p>Public data, concrete questions, and numbers checked against the data. Each project has a README with method, tests and limitations.</p>
+    </div>
+
+    <article class="case" id="rais">
+      <div>
+        <div class="tags"><span class="tag">Analytics Engineering</span><span class="tag alt">Public data</span></div>
+        <h3>Formal labour market in Santa Catarina, Brazil</h3>
+        <p class="q">How did employment, turnover and wages change in the state from 2019 to 2025, and where are the gaps?</p>
+        <ul class="findings">
+          <li><b>+27% formal jobs</b> in six years and <b>+8% median real wage</b>, which only passed its 2019 level in 2022.</li>
+          <li>Turnover rose from 53% to 68%, but <b>turnover net of quits stayed flat at ~34%</b>: quits went from 30% to 42% of all separations. A tight labour market.</li>
+          <li>Women earn <b>83% to 87%</b> of men's median wage in every region. In the capital's region, Black and <i>pardo</i> workers earn <b>70%</b> of the white median.</li>
+        </ul>
+        <div class="fixed"><strong>In the review</strong>I replaced partial CSV extracts with the complete RAIS (Brazil's annual census of formal jobs) on BigQuery and kept the star schema at contract grain, because a median cannot be rebuilt from aggregates. A test caught a coding change in the source in 2023.</div>
+        <div class="stack"><span>BigQuery</span><span>dbt</span><span>SQL</span><span>Star schema</span><span>Python</span><span>27 tests</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/rais-sc-labor-market" target="_blank" rel="noopener">Repository →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="../assets/img/rais-mapa.png" target="_blank"><img src="../assets/img/rais-mapa.png" alt="Map of Santa Catarina with the median wage by municipality in 2025" loading="lazy"></a><figcaption>Median real wage by municipality, 2025 (29.7M contracts, 2019–2025)</figcaption></figure>
+        <figure class="shot"><a href="../assets/img/rais-series.png" target="_blank"><img src="../assets/img/rais-series.png" alt="Employment and real wage index, gross and net turnover" loading="lazy"></a></figure>
+      </div>
+    </article>
+
+    <article class="case flip" id="ufsc">
+      <div>
+        <div class="tags"><span class="tag">Analytics Engineering</span><span class="tag alt">Education</span></div>
+        <h3>23 years of a university entrance exam</h3>
+        <p class="q">How many people apply to the Federal University of Santa Catarina's entrance exam, for which courses, and what has changed since 2003?</p>
+        <ul class="findings">
+          <li><b>Applicants fell 52%</b> (40,124 in 2005 → 19,178 in 2025) while vacancies grew 12%. Competition went from <b>10.2 to 4.4</b> applicants per vacancy.</li>
+          <li><b>Engineering −77%</b> since 2013. <b>Civil Engineering −88%</b> (2,058 → 243). Teaching degrees −78%.</li>
+          <li>Health holds up (−22%) and Computing has been growing again since 2013.</li>
+        </ul>
+        <div class="fixed"><strong>In the review</strong>I rebuilt the series from about 200 HTML and PDF files in 5 different layouts, reconciled with each year's official total (95–98%). The text now makes clear that part of the vacancies moved to the national ENEM-based system, so fewer exam applicants is not the same as less demand for the university.</div>
+        <div class="stack"><span>dbt</span><span>DuckDB</span><span>Python</span><span>pdfplumber</span><span>GitHub Actions</span><span>23 tests</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/UFSC_data_analysis" target="_blank" rel="noopener">Repository →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="../assets/img/ufsc-inscritos.png" target="_blank"><img src="../assets/img/ufsc-inscritos.png" alt="Applicants and applicants per vacancy, 2003 to 2025" loading="lazy"></a><figcaption>Applicants (top) and applicants per vacancy (bottom), 2003–2025</figcaption></figure>
+        <figure class="shot"><a href="../assets/img/ufsc-areas.png" target="_blank"><img src="../assets/img/ufsc-areas.png" alt="Applicants by area, index 2005 = 100" loading="lazy"></a><figcaption>Applicants by area, index 2005 = 100: Health, Computing, Engineering, Teaching</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="case" id="worldcup">
+      <div>
+        <div class="tags"><span class="tag">Modeling</span><span class="tag alt">Sports</span></div>
+        <h3>Beyond FIFA Rankings</h3>
+        <p class="q">Which national team was playing best going into the 2026 World Cup, judging by how it plays, not just by results?</p>
+        <ul class="findings">
+          <li>A score with 5 pillars (attack, defense, control, differential and efficiency), built from <b>z-scores</b> of the last 20 matches of 29 teams.</li>
+          <li>Each match is weighted by the opponent's strength (<b>Elo</b>): playing Spain counts 2.25× more than playing Ukraine.</li>
+          <li><b>Spain, England, Germany and Morocco</b> at the top. Brazil is 15th: it defends well but ranks 23rd in attack.</li>
+        </ul>
+        <div class="fixed"><strong>In the review</strong>Before changing anything, I proved the refactored code reproduced the published ranking with a 0.00 difference. Then I fixed two bugs (missing data counted as zero; wrong Elo codes). The top 4 held.</div>
+        <div class="stack"><span>Python</span><span>Playwright</span><span>BigQuery</span><span>Dataform</span><span>Power BI</span><span>17 tests</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/selection-world-cup-analytics" target="_blank" rel="noopener">Repository →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="../assets/img/copa-pilares.png" target="_blank"><img src="../assets/img/copa-pilares.png" alt="The five pillars of the model and their weights" loading="lazy"></a><figcaption>The five pillars and their weights (from the original presentation, in Portuguese)</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="case flip" id="nba">
+      <div>
+        <div class="tags"><span class="tag">Data pipeline</span><span class="tag alt">Sports</span></div>
+        <h3>NBA Analytics Pipeline</h3>
+        <p class="q">An end-to-end pipeline: from the official NBA API to a dashboard that compares players and teams with the league average.</p>
+        <ul class="findings">
+          <li>Python → BigQuery → Dataform → Power BI, with <b>one command</b>: <code>python main.py</code>.</li>
+          <li>2025–26 season: <b>26,651</b> player games, 1,230 games and 582 players. A test reconciles players' points with each team's score.</li>
+          <li>The tests caught <b>5 neutral-site games</b>, where the API lists both teams as visitors.</li>
+        </ul>
+        <div class="fixed"><strong>In the review</strong>I went from 530 API requests to 1, removed the project ID from the code and built the player dimension from the season, because the "active today" list dropped players who had since retired.</div>
+        <div class="stack"><span>Python</span><span>nba_api</span><span>BigQuery</span><span>Dataform</span><span>Power BI</span><span>21 tests</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/nba_project" target="_blank" rel="noopener">Repository →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="../assets/img/nba-players.jpg" target="_blank"><img src="../assets/img/nba-players.jpg" alt="NBA players dashboard in Power BI" loading="lazy"></a></figure>
+        <figure class="shot"><a href="../assets/img/nba-teams.jpg" target="_blank"><img src="../assets/img/nba-teams.jpg" alt="NBA teams dashboard in Power BI" loading="lazy"></a></figure>
+      </div>
+    </article>
+
+    <article class="case" id="realestate">
+      <div>
+        <div class="tags"><span class="tag">Web scraping + geo</span><span class="tag alt">Real estate</span></div>
+        <h3>Does the beach set the price in Florianópolis?</h3>
+        <p class="q">How much is being near the sea worth? I analyzed 1,514 apartments for sale, measuring the distance to the real outline of 24 beaches.</p>
+        <ul class="findings">
+          <li>Within 1 km of the beach, the price per m² is <b>~21% higher</b> (median R$ 18.2k vs. R$ 15.1k between 1 and 5 km).</li>
+          <li>But distance explains little: <b>Beira-Mar Norte and Agronômica</b> are among the most expensive neighborhoods, 10 km from any ocean beach, because they face the bay.</li>
+          <li>And <b>Ingleses</b> is 400 m from the sea with one of the lowest prices per m² in the city.</li>
+        </ul>
+        <div class="fixed"><strong>In the review</strong>I found that the listings API already returned coordinates, so the geocoding step (11% failures) was unnecessary. I replaced each beach point with its OpenStreetMap outline, measured in meters (UTM 22S).</div>
+        <div class="stack"><span>Python</span><span>requests</span><span>Shapely</span><span>pyproj</span><span>OpenStreetMap</span></div>
+        <div class="links"><a href="https://github.com/RodrigoJacquesW/WebScraping-Analise-Imobiliaria-Florianopolis" target="_blank" rel="noopener">Repository →</a></div>
+      </div>
+      <div class="case-media">
+        <figure class="shot"><a href="../assets/img/imoveis-mapa.png" target="_blank"><img src="../assets/img/imoveis-mapa.png" alt="Map of apartments for sale in Florianópolis colored by price per square meter" loading="lazy"></a></figure>
+        <figure class="shot"><a href="../assets/img/imoveis-distancia.png" target="_blank"><img src="../assets/img/imoveis-distancia.png" alt="Median price per m² by distance to the beach" loading="lazy"></a><figcaption>Median price per m² by distance to the beach</figcaption></figure>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Experience</h2>
+      <p>From construction management to data engineering. The move started when I connected the construction company's ERP to Power BI.</p>
+    </div>
+    <ol class="timeline">
+      <li>
+        <span class="when">May 2025 – Jul 2026</span>
+        <h3>Data Analyst (Analytics Engineering) · Dynamox</h3>
+        <p>Analytical layers of the BigQuery data warehouse with dimensional modeling: 30+ models in dbt and Dataform, Airflow-orchestrated pipelines deployed through pull requests and code review, integration of SAP, Salesforce, HubSpot and REST APIs, and 15+ dashboards used across the company.</p>
+        <div class="stack"><span>BigQuery</span><span>dbt</span><span>Dataform</span><span>Airflow</span><span>Git</span><span>Power BI</span></div>
+      </li>
+      <li>
+        <span class="when">Mar 2022 – May 2025</span>
+        <h3>Civil Engineer · GDI Empreendimentos</h3>
+        <p>Construction management and schedule, cost and productivity indicators. I connected the Sienge ERP to Power BI and replaced spreadsheet controls with dashboards: the project that led me to data.</p>
+        <div class="stack"><span>Sienge</span><span>Power Query</span><span>Power BI</span></div>
+      </li>
+      <li>
+        <span class="when">2018 – 2023</span>
+        <h3>B.Sc. in Civil Engineering · IFSC</h3>
+        <p>Courses in Data Warehousing, Data Engineering and ML, Data Science with Python, and SQL.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>How I work</h2>
+      <p>Three habits I brought from construction sites to data.</p>
+    </div>
+    <div class="how">
+      <div><h3>Reproducible</h3><p>Anyone can clone, set a <code>.env</code> and run. No project IDs or local paths in the code, and source data is versioned or has a download script.</p></div>
+      <div><h3>Tested</h3><p>Uniqueness and integrity tests, and above all reconciliation tests: players' points against the team's, initial stock + hires − separations against active jobs, a rebuilt series against the official total.</p></div>
+      <div><h3>Honest with the data</h3><p>Medians instead of means when there are outliers, caveats written in the README, and what the data does not say made as clear as what it does.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Let's talk?</h2>
+      <p>I enjoy talking about analytics engineering, data modeling and data in construction. LinkedIn is the best way to reach me.</p>
+    </div>
+    <div class="btns">
+      <a class="btn primary" href="https://www.linkedin.com/in/rodrigo-jacques-wolff/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+      <a class="btn" href="https://github.com/RodrigoJacquesW" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Rodrigo Jacques Wolff · Florianópolis, Brazil</span>
+    <span>Public data: RAIS/MTE, IBGE, Coperve/UFSC, NBA Stats, SofaScore, OpenStreetMap</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.getElementById("theme");
+    try { var saved = localStorage.getItem("theme"); if (saved) root.setAttribute("data-theme", saved); } catch (e) {}
+    btn.addEventListener("click", function () {
+      var dark = root.getAttribute("data-theme") === "dark" ||
+        (!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+      var next = dark ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  })();
+</script>
+<script src="../assets/js/circuit.js" defer></script>
+</body>
+</html>
