@@ -142,3 +142,25 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   .nav-links a.hide-xs { display: none; }
   .brand { font-size: 15px; }
 }
+
+/* hero with portrait */
+.hero-grid { display: grid; gap: 32px; align-items: center; }
+@media (min-width: 900px) { .hero-grid { grid-template-columns: 1fr 300px; gap: 56px; } }
+.portrait { margin: 0; justify-self: start; }
+@media (min-width: 900px) { .portrait { justify-self: end; } }
+.portrait img {
+  width: 300px; height: 300px; max-width: 70vw; max-height: 70vw; object-fit: cover; border-radius: 28px;
+  border: 1px solid var(--line); box-shadow: var(--shadow);
+  outline: 6px solid var(--accent-soft); outline-offset: 0;
+}
+@media (max-width: 899px) { .portrait { order: -1; } .portrait img { width: 132px; height: 132px; border-radius: 50%; } }
+
+/* experience timeline */
+.timeline { list-style: none; margin: 0; padding: 0 0 0 24px; border-left: 2px solid var(--line); display: grid; gap: 28px; max-width: 860px; }
+.timeline li { position: relative; }
+.timeline li::before { content: ""; position: absolute; left: -32px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--surface); border: 3px solid var(--accent); }
+.timeline li:first-child::before { background: var(--accent); }
+.timeline .when { font-size: 13px; font-weight: 600; color: var(--ink-3); letter-spacing: .02em; }
+.timeline h3 { font-size: 21px; margin: 4px 0 6px; }
+.timeline p { margin: 0 0 10px; color: var(--ink-2); }
+.timeline .stack { margin-bottom: 0; }
