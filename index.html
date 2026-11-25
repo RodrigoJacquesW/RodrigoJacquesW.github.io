@@ -7,7 +7,12 @@
   <meta name="description" content="Engenheiro civil que virou Analytics Engineer. Cinco projetos de dados reprodutíveis, com testes automatizados: RAIS, UFSC, Copa do Mundo, NBA e mercado imobiliário.">
   <meta property="og:title" content="Rodrigo Jacques Wolff · Portfólio de Dados">
   <meta property="og:description" content="Cinco projetos de dados reprodutíveis e testados. Revisitei todos e corrigi o que estava errado.">
-  <meta property="og:image" content="https://rodrigojacquesw.github.io/assets/img/rais-mapa.png">
+  <meta property="og:image" content="https://rodrigojacquesw.github.io/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://rodrigojacquesw.github.io/">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +29,8 @@
   <div class="wrap">
     <a class="brand" href="#">Rodrigo Jacques Wolff</a>
     <div class="nav-links">
-      <a href="#revisao" class="hide-sm">Revisão</a>
       <a href="#projetos" class="hide-xxs">Projetos</a>
+      <a href="#revisao" class="hide-sm">Revisão</a>
       <a href="#experiencia" class="hide-sm">Experiência</a>
       <a href="#contato" class="hide-xs">Contato</a>
       <div class="lang" role="group" aria-label="Idioma / Language"><a href="index.html" hreflang="pt-BR" aria-current="true" aria-label="Português" title="Português"><svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#009c3b"/><path d="M10 1.6 18.2 7 10 12.4 1.8 7z" fill="#ffdf00"/><circle cx="10" cy="7" r="3.1" fill="#002776"/><path d="M7.1 6.3c1.9-.4 4-.1 5.8.9" stroke="#fff" stroke-width=".6" fill="none"/></svg></a><a href="en/index.html" hreflang="en" aria-label="English" title="English"><svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#b22234"/><path d="M0 1.6h20M0 3.75h20M0 5.9h20M0 8.05h20M0 10.2h20M0 12.35h20" stroke="#fff" stroke-width="1.08"/><rect width="9" height="7.55" fill="#3c3b6e"/></svg></a></div>
@@ -48,6 +53,7 @@
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg>LinkedIn</a>
       <a class="btn" href="https://github.com/RodrigoJacquesW" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a>
+      <a class="btn" href="assets/Curriculo-Rodrigo-Jacques-Wolff.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Currículo (PDF)</a>
     </div>
     </div>
     <figure class="portrait"><img src="assets/img/rodrigo.jpg" alt="Foto de Rodrigo Jacques Wolff" width="480" height="480"></figure>
@@ -79,22 +85,6 @@
   </div>
 </section>
 <!-- stack:end -->
-
-<section id="revisao">
-  <div class="wrap">
-    <div class="review">
-      <h2>Revisitei meus projetos antigos</h2>
-      <p>Antes de montar este portfólio, refiz cada projeto para que qualquer pessoa consiga rodar. No caminho apareceram erros, alguns em análises que eu já tinha publicado no LinkedIn. Em vez de esconder, documentei cada um no README do repositório, com o antes e o depois.</p>
-      <div class="bugs">
-        <div class="bug"><span class="proj">RAIS SC</span><p>A "quebra de série" de <b>+52%</b> nos empregos de 2022 estava na extração: os arquivos tinham só <b>~60%</b> dos vínculos. O crescimento real foi de 6,5%.</p></div>
-        <div class="bug"><span class="proj">UFSC</span><p>Um <code>range()</code> pulava <b>2007 e 2010</b>, e os anos recentes incluíam treineiros. A queda de inscritos é de <b>52%</b>, não de 41%.</p></div>
-        <div class="bug"><span class="proj">Copa do Mundo</span><p>A Escócia estava com o código Elo de <b>Seicheles</b>, e estatística ausente contava como zero. A Nigéria subiu <b>5 posições</b>.</p></div>
-        <div class="bug"><span class="proj">Imobiliário</span><p><b>18%</b> dos imóveis tinham a distância até a praia errada em mais de 1 km: a praia era um ponto, e Jurerê nem estava na lista.</p></div>
-        <div class="bug"><span class="proj">NBA</span><p>Os testes acharam <b>5 jogos em quadra neutra</b> (Las Vegas, México, Berlim, Londres) que quebravam a regra mandante/visitante.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="projetos">
   <div class="wrap">
@@ -205,6 +195,22 @@
   </div>
 </section>
 
+<section id="revisao">
+  <div class="wrap">
+    <div class="review">
+      <h2>Revisitei meus projetos antigos</h2>
+      <p>Antes de montar este portfólio, refiz cada projeto para que qualquer pessoa consiga rodar. No caminho apareceram erros, alguns em análises que eu já tinha publicado no LinkedIn. Em vez de esconder, documentei cada um no README do repositório, com o antes e o depois.</p>
+      <div class="bugs">
+        <div class="bug"><span class="proj">RAIS SC</span><p>A "quebra de série" de <b>+52%</b> nos empregos de 2022 estava na extração: os arquivos tinham só <b>~60%</b> dos vínculos. O crescimento real foi de 6,5%.</p></div>
+        <div class="bug"><span class="proj">UFSC</span><p>Um <code>range()</code> pulava <b>2007 e 2010</b>, e os anos recentes incluíam treineiros. A queda de inscritos é de <b>52%</b>, não de 41%.</p></div>
+        <div class="bug"><span class="proj">Copa do Mundo</span><p>A Escócia estava com o código Elo de <b>Seicheles</b>, e estatística ausente contava como zero. A Nigéria subiu <b>5 posições</b>.</p></div>
+        <div class="bug"><span class="proj">Imobiliário</span><p><b>18%</b> dos imóveis tinham a distância até a praia errada em mais de 1 km: a praia era um ponto, e Jurerê nem estava na lista.</p></div>
+        <div class="bug"><span class="proj">NBA</span><p>Os testes acharam <b>5 jogos em quadra neutra</b> (Las Vegas, México, Berlim, Londres) que quebravam a regra mandante/visitante.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="experiencia">
   <div class="wrap">
     <div class="section-head">
@@ -256,6 +262,7 @@
     <div class="btns">
       <a class="btn primary" href="https://www.linkedin.com/in/rodrigo-jacques-wolff/" target="_blank" rel="noopener">Falar no LinkedIn</a>
       <a class="btn" href="https://github.com/RodrigoJacquesW" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="assets/Curriculo-Rodrigo-Jacques-Wolff.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Currículo (PDF)</a>
     </div>
   </div>
 </section>
